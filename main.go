@@ -7,11 +7,11 @@ import (
 )
 
 type Point struct {
-	x, y int32
+	x, y int
 }
 type Square struct {
 	start Point
-	side  int32
+	side  uint
 }
 
 //func main() {
@@ -29,8 +29,8 @@ func (c Square) End() Point {
 
 	var resultPoint Point
 
-	resultPoint.x = c.side + c.start.x
-	resultPoint.y = c.side + c.start.y
+	resultPoint.x = int(c.side) + c.start.x
+	resultPoint.y = int(c.side) + c.start.y
 	return resultPoint
 }
 
