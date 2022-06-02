@@ -1,4 +1,4 @@
-package golang_united_school_homework_5_1
+package square
 
 //package main
 

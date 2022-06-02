@@ -1,3 +1,3 @@
-module golang_united_school_homework_5_1
+module square
 
 go 1.17
