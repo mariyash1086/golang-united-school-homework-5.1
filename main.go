@@ -2,10 +2,6 @@ package square
 
 //package main
 
-import (
-	"math"
-)
-
 type Point struct {
 	x, y int
 }
@@ -34,12 +30,12 @@ func (c Square) End() Point {
 	return resultPoint
 }
 
-func (c Square) Area() float64 {
+func (c Square) Area() uint {
 
-	return math.Pow(float64(c.side), 2)
+	return c.side * c.side
 
 }
 
-func (c Square) Perimeter() float64 {
-	return float64(c.side) * 4
+func (c Square) Perimeter() uint {
+	return c.side * 4
 }
